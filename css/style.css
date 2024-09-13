@@ -1,15 +1,15 @@
-* {
+*{
     text-decoration: none;
     padding: 0;
     margin: 0;
     list-style: none;
-    box-sizing: border-box;
 }
 
 .cuotas {
     background-color: black;
     color: white;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
     padding: 8px;
 }
@@ -17,28 +17,29 @@
 .menu {
     display: flex;
     justify-content: space-evenly;
-    padding: 20px;
     flex-wrap: nowrap;
+    padding: 20px;
 }
 
 .productos {
     color: rgb(0, 0, 0);
     font-size: 1.7rem;
     padding: 0.5rem;
-    transition: 0.3s;
+    transition: .3s;
     border-radius: 10px;
-    text-shadow: 1px 10px 25px rgba(0,0,0,0.5);
+    text-shadow: 1px 10px 25px rgba( 0,0,0,0.5);
     font-family: "Rubik", sans-serif;
 }
 
 .productos:hover {
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 28px 8px rgb(0, 0, 0);
     transition: 0.3s;
+    box-shadow: 0px 0px 28px 8px rgb(0, 0, 0);
 }
 
 .navegador {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
     background: rgb(0, 0, 0);
     padding: 35px;
@@ -52,7 +53,7 @@
 .marca {
     color: white;
     font-size: 2.5rem;
-    transition: 0.3s;
+    transition: .3s;
     border-radius: 10px;
     text-shadow: 1px 10px 25px rgba(255, 255, 255, 0.5);
     font-family: "Libre Baskerville", serif;
@@ -61,6 +62,7 @@
 
 .marca:hover {
     background-color: rgb(255, 255, 255);
+    transition: .3s;
     box-shadow: 0px 0px 28px 8px rgb(104, 103, 103);
     color: black;
     padding: 1.2rem;
@@ -87,6 +89,187 @@
     font-size: 2.5rem;
 }
 
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem;
+    text-align: center;
+    transition: 0.5s;
+    justify-content: space-around;
+}
+.titulo2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 2rem 0rem 0rem 0rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+}
+
+.articulo {
+    cursor: pointer;
+    box-shadow: 1px 10px 25px rgba( 0,0,0,0.5);
+}
+
+.articulo img{ 
+    max-width: 22rem;
+}
+
+.articulo:hover {
+    transform: scale(1.15);
+    transition: 0.8s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 51, 51);
+    box-shadow: 1px 10px 25px rgba( 0,0,0,0.5);
+}
+
+.nombre {
+    color: rgb(148, 148, 148);
+}
+
+.precio {
+    font-size: 2rem;
+}
+
+.precio:hover {
+    transform: scale(1.30);
+    transition: 0.8s;
+}
+
+.pago {
+    color: rgb(240, 111, 111);
+}
+
+.marca1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-family: "Rubik", sans-serif;
+    font-size: 2.5rem;
+}
+
+.nosotros {
+    padding: 50px;
+    background-color: #f9f9f9;
+    font-family: "Libre Baskerville", serif;
+}
+
+.nosotros h2 {
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.descripcion{
+    padding: 40px;
+}
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.contenido div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.mision, .vision, .valores {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.valores ul {
+    list-style: none;
+    padding: 0;
+}
+
+.valores li {
+    margin-bottom: 10px;
+}
+
+
+.contacto {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: "Libre Baskerville", serif;
+}
+
+.contacto h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.contenedorinfo {
+    padding: 3rem;
+}
+
+.contactoinfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info, .mensaje {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info h3, .mensaje h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.preguntas-frecuentes {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: "Libre Baskerville", serif;
+}
+
+.preguntas-frecuentes h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.preguntas {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.preguntas h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.preguntas dl {
+    margin: 0;
+}
+
+.preguntas dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.preguntas dd {
+    margin: 0 0 10px 0;
+    padding-left: 10px;
+}
+
 .ulfooter {
     background-color: black;
     color: white;
@@ -109,7 +292,8 @@
 
 .derechos {
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    flex-wrap: nowrap;
     padding: 0.5rem;
     color: white;
     background-color: black;
@@ -119,12 +303,15 @@
     .cuotas {
         font-size: 0.9rem;
         padding: 5px;
+        flex-wrap: wrap;
+        text-align: center;
     }
 
     .menu {
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        gap: 10px;
     }
 
     .productos {
@@ -155,8 +342,54 @@
         font-size: 2rem;
     }
 
+    .main {
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .titulo2 {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+    }
+
+    .articulo img {
+        max-width: 100%;
+    }
+
+    .marca1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .ulfooter {
+        align-items: center;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .redes {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .redes1 {
+        margin: 0.5rem;
+        font-size: 1.5rem;
+    }
+
     .derechos {
         justify-content: center;
-        padding: 0.5rem;
+        text-align: center;
+    }
+    .contacto-info {
+        flex-direction: column;
+    }
+    .preguntas {
+        padding: 15px;
+    }
+
+    .preguntas h3 {
+        font-size: 1.5em;
     }
 }
+
