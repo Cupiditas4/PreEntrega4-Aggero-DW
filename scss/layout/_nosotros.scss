@@ -1,0 +1,32 @@
+.nosotros {
+    padding: 50px;
+    background-color: #f9f9f9;
+    font-family: $fuentesecundaria;
+    .nosotros h2 {
+        font-size: 4em;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .descripcion{
+        padding: 40px;
+    }
+    .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; 
+        .mision, .vision, .valores {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            .valores ul {
+                list-style: none;
+                padding: 0;
+            }
+            .valores li {
+                margin-bottom: 10px;
+            }
+        }        
+    }
+}

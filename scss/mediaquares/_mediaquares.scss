@@ -1,0 +1,77 @@
+@media (max-width: 768px) {
+    .cuotas {
+        font-size: 0.9rem;
+        padding: 5px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+    .productos {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+    .navegador {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .marca {
+        font-size: 2rem;
+    }
+    .cuerpo {
+        padding: 10rem 1rem;
+    }
+    .cuerpo1 {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .marca1 {
+        font-size: 2rem;
+    }
+    .main {
+        flex-direction: column;
+        margin: 2rem;
+    }
+    .titulo2 {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+    }
+    .articulo img {
+        max-width: 100%;
+    }
+    .marca1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .ulfooter {
+        align-items: center;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .redes {
+        justify-content: center;
+        text-align: center;
+    }
+    .redes1 {
+        margin: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .derechos {
+        justify-content: center;
+        text-align: center;
+    }
+    .contacto-info {
+        flex-direction: column;
+    }
+    .preguntas {
+        padding: 15px;
+    }
+    .preguntas h3 {
+        font-size: 1.5em;
+    }
+}

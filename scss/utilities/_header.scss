@@ -1,0 +1,113 @@
+.cuotas {
+    background-color: black;
+    color: white;
+    @include flexspacearound;
+    padding: 8px;
+}
+.menu {
+    @include flexspacearound;
+    padding: 20px;
+    .productos {
+        color: rgb(0, 0, 0);
+        font-size: 1.7rem;
+        padding: 0.5rem;
+        transition: .3s;
+        border-radius: 10px;
+        text-shadow: 1px 10px 25px rgba( 0,0,0,0.5);
+        font-family: $fuentesecundaria;
+        &:hover{
+            background-color: rgb(255, 255, 255);
+            transition: 0.3s;
+            box-shadow: 0px 0px 28px 8px rgb(0, 0, 0);
+        }
+    }
+}
+.navegador {
+    @include flexspacearound;
+    background: rgb(0, 0, 0);
+    padding: 35px;
+}
+.navegador {
+    @include flexspacearound;
+    background: rgb(0, 0, 0);
+    padding: 35px;
+    .icononav {
+        font-size: 2.5rem;
+        color: white;
+    }
+    .marca {
+        color: white;
+        font-size: 2.5rem;
+        transition: .3s;
+        border-radius: 10px;
+        text-shadow: 1px 10px 25px rgba(255, 255, 255, 0.5);
+        font-family: $fuentesecundaria;
+        font-weight: 700;
+        &:hover{
+            background-color: rgb(255, 255, 255);
+            transition: .3s;
+            box-shadow: 0px 0px 28px 8px rgb(104, 103, 103);
+            color: black;
+            padding: 1.2rem;
+        }
+    .buscar {
+        position: relative;
+        padding: 5px;
+        }
+        .buscar input {
+            width: 0;
+            height: 40px;
+            padding: 0 20px;
+            font-size: 18px;
+            color: #222;
+            outline: none;
+            border: 1px solid silver;
+            border-radius: 30px;
+            transition: all 0.6s ease;
+        }
+
+    }
+    
+}
+
+.buscar {
+    position: relative;
+    padding: 5px;
+  }
+
+.buscar input {
+    width: 0;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #222;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+  }
+  
+.btn {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+.buscar:hover input {
+    width: 240px;
+}
+  
+.buscar input:focus {
+    width: 240px;
+}
+

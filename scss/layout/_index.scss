@@ -1,0 +1,19 @@
+.cuerpo {
+    background-image: url(../assets/imgprincipal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 18rem;
+    .cuerpo1 {
+        background-color: rgb(255, 255, 255);
+        padding: 1.5rem;
+        font-size: 2rem;
+        border-radius: 10px;  
+        font-family: $fuentesecundaria;
+        .marca1 {
+            @include flexspacearound;
+            font-family: $fuenteprincipal;
+            font-size: 2.5rem;
+        }
+    }
+}

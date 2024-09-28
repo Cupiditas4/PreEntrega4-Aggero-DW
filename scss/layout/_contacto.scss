@@ -1,0 +1,35 @@
+.contacto {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: $fuenteprincipal;
+    .contacto h2 {
+        font-size: 3.5em;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: 700;
+    }
+    .contenedorinfo {
+        padding: 3rem;
+        .descripcion{
+            padding: 40px;
+        }
+        .contactoinfo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            .info, .mensaje {
+                flex: 1;
+                min-width: 300px;
+                background: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                .info h3, .mensaje h3 {
+                    font-size: 1.5em;
+                    margin-bottom: 15px;
+                    font-weight: 700;
+                }     
+            }  
+        } 
+    } 
+}

@@ -1,0 +1,23 @@
+*{
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+$fuenteprincipal: "Rubik", sans-serif;
+$fuentesecundaria:"Libre Baskerville", serif;
+
+@mixin flexspacearound{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+@mixin flexrowspacebetween{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+

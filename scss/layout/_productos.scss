@@ -1,0 +1,43 @@
+.titulo2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 2rem 0rem 0rem 0rem;
+    font-family: $fuentesecundaria;
+    font-weight: 700;
+}
+.main {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+    text-align: center;
+    transition: 0.5s;
+    .articulo {
+        cursor: pointer;
+        box-shadow: 1px 10px 25px rgba( 0,0,0,0.5);
+        .articulo img{ 
+            max-width: 2rem;
+        }
+        &:hover{
+            transform: scale(1.15);
+            transition: 0.8s;
+            color: rgb(255, 255, 255);
+            background-color: rgb(51, 51, 51);
+            box-shadow: 1px 10px 25px rgba( 0,0,0,0.5);
+        }
+        .nombre {
+            color: rgb(148, 148, 148);
+        }        
+        .precio {
+            font-size: 2rem;
+            &:hover {
+                transform: scale(1.30);
+                transition: 0.8s;
+            }            
+        }
+        .pago {
+            color: rgb(240, 111, 111);
+        }           
+    }
+}

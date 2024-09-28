@@ -1,0 +1,26 @@
+.row{
+    .ulfooter {
+        background-color: black;
+        color: white;
+        padding: 2rem;
+        font-size: 1.5rem;
+        font-family: $fuentesecundaria;
+    }
+    .redes {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        .redes1 {
+            margin: 0rem 1.3rem;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+        
+    }
+}
+.derechos {
+    @include flexspacearound;
+    padding: 0.5rem;
+    color: white;
+    background-color: black;
+}

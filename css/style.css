@@ -1,395 +1,406 @@
-*{
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .cuotas {
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    padding: 8px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 8px;
 }
 
 .menu {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 20px;
 }
-
-.productos {
-    color: rgb(0, 0, 0);
-    font-size: 1.7rem;
-    padding: 0.5rem;
-    transition: .3s;
-    border-radius: 10px;
-    text-shadow: 1px 10px 25px rgba( 0,0,0,0.5);
-    font-family: "Rubik", sans-serif;
+.menu .productos {
+  color: rgb(0, 0, 0);
+  font-size: 1.7rem;
+  padding: 0.5rem;
+  transition: 0.3s;
+  border-radius: 10px;
+  text-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+  font-family: "Libre Baskerville", serif;
 }
-
-.productos:hover {
-    background-color: rgb(255, 255, 255);
-    transition: 0.3s;
-    box-shadow: 0px 0px 28px 8px rgb(0, 0, 0);
+.menu .productos:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
+  box-shadow: 0px 0px 28px 8px rgb(0, 0, 0);
 }
 
 .navegador {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    background: rgb(0, 0, 0);
-    padding: 35px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background: rgb(0, 0, 0);
+  padding: 35px;
 }
 
-.icononav {
-    font-size: 2.5rem;
-    color: white;
+.navegador {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background: rgb(0, 0, 0);
+  padding: 35px;
+}
+.navegador .icononav {
+  font-size: 2.5rem;
+  color: white;
+}
+.navegador .marca {
+  color: white;
+  font-size: 2.5rem;
+  transition: 0.3s;
+  border-radius: 10px;
+  text-shadow: 1px 10px 25px rgba(255, 255, 255, 0.5);
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+.navegador .marca:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
+  box-shadow: 0px 0px 28px 8px rgb(104, 103, 103);
+  color: black;
+  padding: 1.2rem;
+}
+.navegador .marca .buscar {
+  position: relative;
+  padding: 5px;
+}
+.navegador .marca .buscar input {
+  width: 0;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #222;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+  transition: all 0.6s ease;
 }
 
-.marca {
-    color: white;
-    font-size: 2.5rem;
-    transition: .3s;
-    border-radius: 10px;
-    text-shadow: 1px 10px 25px rgba(255, 255, 255, 0.5);
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
+.buscar {
+  position: relative;
+  padding: 5px;
 }
 
-.marca:hover {
-    background-color: rgb(255, 255, 255);
-    transition: .3s;
-    box-shadow: 0px 0px 28px 8px rgb(104, 103, 103);
-    color: black;
-    padding: 1.2rem;
+.buscar input {
+  width: 0;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #222;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+  transition: all 0.6s ease;
 }
 
-.cuerpo {
-    background-image: url(../assets/imgprincipal.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 18rem;
+.btn {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 35px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.cuerpo1 {
-    background-color: rgb(255, 255, 255);
-    padding: 1.5rem;
-    font-size: 2rem;
-    border-radius: 10px;  
-    font-family: "Libre Baskerville", serif;
+.buscar:hover input {
+  width: 240px;
 }
 
-.marca1 {
-    font-family: "Rubik", sans-serif;
-    font-size: 2.5rem;
+.buscar input:focus {
+  width: 240px;
 }
 
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5rem;
-    text-align: center;
-    transition: 0.5s;
-    justify-content: space-around;
+.row .ulfooter {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-family: "Libre Baskerville", serif;
 }
-.titulo2 {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    margin: 2rem 0rem 0rem 0rem;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
+.row .redes {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
 }
-
-.articulo {
-    cursor: pointer;
-    box-shadow: 1px 10px 25px rgba( 0,0,0,0.5);
-}
-
-.articulo img{ 
-    max-width: 22rem;
-}
-
-.articulo:hover {
-    transform: scale(1.15);
-    transition: 0.8s;
-    color: rgb(255, 255, 255);
-    background-color: rgb(51, 51, 51);
-    box-shadow: 1px 10px 25px rgba( 0,0,0,0.5);
-}
-
-.nombre {
-    color: rgb(148, 148, 148);
-}
-
-.precio {
-    font-size: 2rem;
-}
-
-.precio:hover {
-    transform: scale(1.30);
-    transition: 0.8s;
-}
-
-.pago {
-    color: rgb(240, 111, 111);
-}
-
-.marca1 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    font-family: "Rubik", sans-serif;
-    font-size: 2.5rem;
-}
-
-.nosotros {
-    padding: 50px;
-    background-color: #f9f9f9;
-    font-family: "Libre Baskerville", serif;
-}
-
-.nosotros h2 {
-    font-size: 4em;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-.descripcion{
-    padding: 40px;
-}
-.contenido {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; 
-}
-
-.contenido div {
-    flex: 1;
-    min-width: 200px;
-}
-
-.mision, .vision, .valores {
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.valores ul {
-    list-style: none;
-    padding: 0;
-}
-
-.valores li {
-    margin-bottom: 10px;
-}
-
-
-.contacto {
-    padding: 20px;
-    background-color: #f9f9f9;
-    font-family: "Libre Baskerville", serif;
-}
-
-.contacto h2 {
-    font-size: 3.5em;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: 700;
-}
-
-.contenedorinfo {
-    padding: 3rem;
-}
-
-.contactoinfo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.info, .mensaje {
-    flex: 1;
-    min-width: 300px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.info h3, .mensaje h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
-
-.preguntas-frecuentes {
-    padding: 20px;
-    background-color: #f9f9f9;
-    font-family: "Libre Baskerville", serif;
-}
-
-.preguntas-frecuentes h2 {
-    font-size: 3.5em;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: 700;
-}
-
-.preguntas {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-}
-
-.preguntas h3 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
-
-.preguntas dl {
-    margin: 0;
-}
-
-.preguntas dt {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.preguntas dd {
-    margin: 0 0 10px 0;
-    padding-left: 10px;
-}
-
-.ulfooter {
-    background-color: black;
-    color: white;
-    padding: 2rem;
-    font-size: 1.5rem;
-    font-family: "Libre Baskerville", serif;
-}
-
-.redes {
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-}
-
-.redes1 {
-    margin: 0rem 1.3rem;
-    font-size: 2rem;
-    padding: 1rem;
+.row .redes .redes1 {
+  margin: 0rem 1.3rem;
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 .derechos {
-    display: flex;
-    justify-content: right;
-    flex-wrap: nowrap;
-    padding: 0.5rem;
-    color: white;
-    background-color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 0.5rem;
+  color: white;
+  background-color: black;
+}
+
+.cuerpo {
+  background-image: url(../assets/imgprincipal.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 18rem;
+}
+.cuerpo .cuerpo1 {
+  background-color: rgb(255, 255, 255);
+  padding: 1.5rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-family: "Libre Baskerville", serif;
+}
+.cuerpo .cuerpo1 .marca1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5rem;
+}
+
+.nosotros {
+  padding: 50px;
+  background-color: #f9f9f9;
+  font-family: "Libre Baskerville", serif;
+}
+.nosotros .nosotros h2 {
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.nosotros .descripcion {
+  padding: 40px;
+}
+.nosotros .contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.nosotros .contenido .mision, .nosotros .contenido .vision, .nosotros .contenido .valores {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.nosotros .contenido .mision .valores ul, .nosotros .contenido .vision .valores ul, .nosotros .contenido .valores .valores ul {
+  list-style: none;
+  padding: 0;
+}
+.nosotros .contenido .mision .valores li, .nosotros .contenido .vision .valores li, .nosotros .contenido .valores .valores li {
+  margin-bottom: 10px;
+}
+
+.preguntas-frecuentes {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: "Libre Baskerville", serif;
+}
+.preguntas-frecuentes .preguntas-frecuentes h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+.preguntas-frecuentes .preguntas {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+.preguntas-frecuentes .preguntas .preguntas h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.preguntas-frecuentes .preguntas .preguntas dl {
+  margin: 0;
+}
+.preguntas-frecuentes .preguntas .preguntas dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.preguntas-frecuentes .preguntas .preguntas dd {
+  margin: 0 0 10px 0;
+  padding-left: 10px;
+}
+
+.titulo2 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 2rem 0rem 0rem 0rem;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+
+.main {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem;
+  text-align: center;
+  transition: 0.5s;
+}
+.main .articulo {
+  cursor: pointer;
+  box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+}
+.main .articulo .articulo img {
+  max-width: 2rem;
+}
+.main .articulo:hover {
+  transform: scale(1.15);
+  transition: 0.8s;
+  color: rgb(255, 255, 255);
+  background-color: rgb(51, 51, 51);
+  box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+}
+.main .articulo .nombre {
+  color: rgb(148, 148, 148);
+}
+.main .articulo .precio {
+  font-size: 2rem;
+}
+.main .articulo .precio:hover {
+  transform: scale(1.3);
+  transition: 0.8s;
+}
+.main .articulo .pago {
+  color: rgb(240, 111, 111);
+}
+
+.contacto {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: "Rubik", sans-serif;
+}
+.contacto .contacto h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+.contacto .contenedorinfo {
+  padding: 3rem;
+}
+.contacto .contenedorinfo .descripcion {
+  padding: 40px;
+}
+.contacto .contenedorinfo .contactoinfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contacto .contenedorinfo .contactoinfo .info, .contacto .contenedorinfo .contactoinfo .mensaje {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.contacto .contenedorinfo .contactoinfo .info .info h3, .contacto .contenedorinfo .contactoinfo .info .mensaje h3, .contacto .contenedorinfo .contactoinfo .mensaje .info h3, .contacto .contenedorinfo .contactoinfo .mensaje .mensaje h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
-    .cuotas {
-        font-size: 0.9rem;
-        padding: 5px;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        gap: 10px;
-    }
-
-    .productos {
-        font-size: 1.2rem;
-        padding: 0.5rem;
-    }
-
-    .navegador {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
-    .marca {
-        font-size: 2rem;
-    }
-
-    .cuerpo {
-        padding: 10rem 1rem;
-    }
-
-    .cuerpo1 {
-        font-size: 1.5rem;
-        padding: 1rem;
-    }
-
-    .marca1 {
-        font-size: 2rem;
-    }
-
-    .main {
-        flex-direction: column;
-        margin: 2rem;
-    }
-
-    .titulo2 {
-        font-size: 2.5rem;
-        margin: 1rem 0;
-    }
-
-    .articulo img {
-        max-width: 100%;
-    }
-
-    .marca1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .ulfooter {
-        align-items: center;
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    .redes {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .redes1 {
-        margin: 0.5rem;
-        font-size: 1.5rem;
-    }
-
-    .derechos {
-        justify-content: center;
-        text-align: center;
-    }
-    .contacto-info {
-        flex-direction: column;
-    }
-    .preguntas {
-        padding: 15px;
-    }
-
-    .preguntas h3 {
-        font-size: 1.5em;
-    }
+  .cuotas {
+    font-size: 0.9rem;
+    padding: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  }
+  .productos {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  .navegador {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  .marca {
+    font-size: 2rem;
+  }
+  .cuerpo {
+    padding: 10rem 1rem;
+  }
+  .cuerpo1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .marca1 {
+    font-size: 2rem;
+  }
+  .main {
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .titulo2 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+  .articulo img {
+    max-width: 100%;
+  }
+  .marca1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .ulfooter {
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .redes {
+    justify-content: center;
+    text-align: center;
+  }
+  .redes1 {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .derechos {
+    justify-content: center;
+    text-align: center;
+  }
+  .contacto-info {
+    flex-direction: column;
+  }
+  .preguntas {
+    padding: 15px;
+  }
+  .preguntas h3 {
+    font-size: 1.5em;
+  }
 }
 
+/*# sourceMappingURL=style.css.map */
